@@ -8,6 +8,7 @@ public class PracticeFormPage {
     private final By name = By.id("firstName");
     private final By lastName = By.id("lastName");
     private final By email = By.id("userEmail");
+    private final By genderMale= By.id("gender-radio-1");
 
 
     public PracticeFormPage(WebDriver driver){  //Constructor create
@@ -47,6 +48,8 @@ public class PracticeFormPage {
     }
 
 
+
+
     public String getName(){
         WebElement nameSpace = driver.findElement(name);
         return nameSpace.getAttribute("value"); // burasi Text yoksa "parametre olarak ''value olacak  ==> mustafa ismini almak icin
@@ -61,5 +64,15 @@ public class PracticeFormPage {
         WebElement emailSpace = driver.findElement(email);
         return emailSpace.getAttribute("value");
     }
+
+    public void getGenderMale(){
+        WebElement gender = driver.findElement(genderMale);
+        System.out.println(gender.getAttribute("value"));
+
+    }
+
+
+
+
 
 }

@@ -17,6 +17,7 @@ public class Test_Setting_Name_Lastname_Email extends BaseTest{
 //       PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
         practiceFormPage.setLastName("Aksu");
      Assertions.assertEquals("Aksu",practiceFormPage.getLastName(), "Last name value is not correct!");
+    practiceFormPage.getGenderMale();
     }
 
     @Test
@@ -25,6 +26,7 @@ public class Test_Setting_Name_Lastname_Email extends BaseTest{
         practiceFormPage.setEmail("mustafa123@gmail.com");
          Assertions.assertEquals("mustafa123@gmail.com",practiceFormPage.getEmail(), "Last name value is not correct!");
     }
+
 
 
 
