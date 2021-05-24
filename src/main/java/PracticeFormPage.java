@@ -47,5 +47,19 @@ public class PracticeFormPage {
     }
 
 
+    public String getName(){
+        WebElement nameSpace = driver.findElement(name);
+        return nameSpace.getAttribute("value"); // burasi Text yoksa "parametre olarak ''value olacak  ==> mustafa ismini almak icin
+    }
+
+    public String getLastName(){
+        WebElement lastNameSpace = driver.findElement(lastName);
+        return lastNameSpace.getAttribute("value");
+    }
+
+    public String getEmail(){
+        WebElement emailSpace = driver.findElement(email);
+        return emailSpace.getAttribute("value");
+    }
 
 }

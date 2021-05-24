@@ -8,21 +8,22 @@ public class Test_Setting_Name_Lastname_Email extends BaseTest{
     public void setName() {
 //        PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
         practiceFormPage.setName("Mustafa");
-     // Assertions.assertEquals("Mustafa",practiceFormPage.getName(), "Name value is not correct!");
+
+        Assertions.assertEquals("Mustafa", practiceFormPage.getName(), "Name value is not correct!" );
     }
 
     @Test
     public void setLastName(){
-//        PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
+//       PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
         practiceFormPage.setLastName("Aksu");
-     //   Assertions.assertEquals("Aksu",practiceFormPage.getLastname(), "Last name value is not correct!");
+     Assertions.assertEquals("Aksu",practiceFormPage.getLastName(), "Last name value is not correct!");
     }
 
     @Test
     public void setEmail(){
 //        PracticeFormPage practiceFormPage = new PracticeFormPage(driver);
         practiceFormPage.setEmail("mustafa123@gmail.com");
-     //   Assertions.assertEquals("mustafa123@gmail.com",practiceFormPage.getEmail(), "Last name value is not correct!");
+         Assertions.assertEquals("mustafa123@gmail.com",practiceFormPage.getEmail(), "Last name value is not correct!");
     }
 
 
