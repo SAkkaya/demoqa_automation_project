@@ -10,13 +10,19 @@ public class PracticeFormPage {
     private final By email = By.id("userEmail");
     private final By genderMale= By.id("gender-radio-1");
 
+    private GenderSection genderSection;
+
 
     public PracticeFormPage(WebDriver driver){  //Constructor create
         this.driver = driver;
+        genderSection = new GenderSection(driver);
     }
 
+    public GenderSection getGenderSection() {
+        return this.genderSection;
+    }
 
-//    public void setName(String nameAsString){
+    //    public void setName(String nameAsString){
 //        WebElement nameSpace = driver.findElement(name);
 //        nameSpace.click();
 //        nameSpace.sendKeys(nameAsString);
